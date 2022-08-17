@@ -16,3 +16,15 @@ function preparationTime(layersArray, time) {
   return time * layersArray.length;
 }
 
+function quantities(layersArray) {
+  return layersArray
+    .filter((layers) => layers == "noodles" || layers == "sauce")
+    .reduce(function (accumulator, currentValue) {
+      if (accumulator != undefined && currentValue in accumulator) {
+        accumulator[currentValue]++;
+      } else {
+        accumulator[currentValue] = 1;
+      }
+      return accumulator;
+    }, {});
+}
