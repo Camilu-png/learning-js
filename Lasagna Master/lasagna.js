@@ -32,3 +32,12 @@ function quantities(layersArray) {
 function addSecretIngredient(friendsList, myList) {
   myList.push(friendsList[friendsList.length - 1]);
 }
+
+function scaleRecipe(recipeObj, portion) {
+  let newRecipe = Object.assign({}, recipeObj);
+  let claves = Object.keys(recipeObj);
+  for (let i = 0; i < claves.length; i++) {
+    newRecipe[claves[i]] = (recipeObj[claves[i]] * portion) / 2;
+  }
+  return newRecipe;
+}
