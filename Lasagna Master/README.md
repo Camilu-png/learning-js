@@ -15,3 +15,21 @@ Lasagna is done.
 Not done, please wait.
 You forgot to set the timer.
 ```
+
+## preparationTime
+
+### Input:
+
+```javascript
+const layers = ["sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"];
+
+console.log(preparationTime(layers));
+console.log(preparationTime(layers, 3));
+```
+
+### Output:
+
+```shell
+12
+18
+```
