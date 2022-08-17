@@ -63,3 +63,24 @@ console.log(myList);
 ```shell
 [ 'noodles', 'meat', 'sauce', 'mozzarella', 'kampot pepper' ]
 ```
+
+# scaleRecipe
+
+```javascript
+const recipe = {
+  noodles: 200,
+  sauce: 0.5,
+  mozzarella: 1,
+  meat: 100,
+};
+
+console.log(scaleRecipe(recipe, 4));
+console.log(recipe);
+```
+
+## Output:
+
+```shell
+{ noodles: 400, sauce: 1, mozzarella: 2, meat: 200 }
+{ noodles: 200, sauce: 0.5, mozzarella: 1, meat: 100 }
+```
