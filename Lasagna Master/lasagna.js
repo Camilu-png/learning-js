@@ -9,6 +9,10 @@ function cookingStatus(time) {
   }
 }
 
-console.log(cookingStatus(0));
-console.log(cookingStatus(1));
-console.log(cookingStatus());
+function preparationTime(layersArray, time) {
+  if (typeof time === "undefined") {
+    time = 2;
+  }
+  return time * layersArray.length;
+}
+
