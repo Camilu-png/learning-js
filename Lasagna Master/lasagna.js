@@ -28,3 +28,7 @@ function quantities(layersArray) {
       return accumulator;
     }, {});
 }
+
+function addSecretIngredient(friendsList, myList) {
+  myList.push(friendsList[friendsList.length - 1]);
+}
