@@ -47,3 +47,19 @@ console.log(quantities(layers));
 ```shell
 { sauce: 2, noodles: 2 }
 ```
+
+# addSecretIngredient
+
+```javascript
+const friendsList = ["noodles", "sauce", "mozzarella", "kampot pepper"];
+const myList = ["noodles", "meat", "sauce", "mozzarella"];
+
+addSecretIngredient(friendsList, myList);
+console.log(myList);
+```
+
+## Output:
+
+```shell
+[ 'noodles', 'meat', 'sauce', 'mozzarella', 'kampot pepper' ]
+```
