@@ -1,5 +1,7 @@
 # cookingStatus
 
+Esta función debe determinar si la lasaña ya está lista dependiendo del tiempo que falte. Es decir, si a la función le decimos que quedan 0 tiempo, entonces debe retornar `"Lasagna is done."`, si queda cualquier otro valor entonces debe retornar `"Not done, please wait."` y en el caso en que no se envíe ningún parámetro debe retornar `"You forgot to set the timer."`.
+
 ## Input:
 
 ```javascript
