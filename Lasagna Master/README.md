@@ -40,6 +40,8 @@ console.log(preparationTime(layers, 3));
 
 # quantities
 
+Esta función debe determinar cuánta salsa y fideos se deben utilizar dependiendo de la cantidad de veces que se nombran estos ingredientes en el array. Por cada ingrediente _noodles_ se deben utilizar 50 gramos de fideos y por cada ingrediente _sauce_ se deben utilizar 0.2 litros de salsa.
+
 ```javascript
 const layers = ["sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"];
 
@@ -49,7 +51,7 @@ console.log(quantities(layers));
 ## Output:
 
 ```shell
-{ sauce: 2, noodles: 2 }
+{ sauce: 0.4, noodles: 100 }
 ```
 
 # addSecretIngredient
