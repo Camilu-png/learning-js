@@ -40,7 +40,7 @@ function scaleRecipe(recipeObj, portion) {
   let newRecipe = Object.assign({}, recipeObj);
   let claves = Object.keys(recipeObj);
   for (let i = 0; i < claves.length; i++) {
-    newRecipe[claves[i]] = (recipeObj[claves[i]] * portion) / 2;
+    newRecipe[claves[i]] = recipeObj[claves[i]] * Math.ceil(portion / 2);
   }
   return newRecipe;
 }
