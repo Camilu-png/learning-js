@@ -74,6 +74,8 @@ console.log(myList);
 
 # scaleRecipe
 
+Esta función debe ser capaz de poder escalar la receta para preparar dos lasañas a la cantidad que se pida en el parámetro. El primer parámetro de la función es el objeto recipiente que tienes las cantidades para realizar dos lasañas y el segundo parámetro es la cantidad de lasañas que se desean preparar. Esta función debe ser capaz de retornar un objeto con las cantidades de ingredientes para preparar la cantidad de lasañas que se pide.
+
 ```javascript
 const recipe = {
   noodles: 200,
