@@ -20,6 +20,8 @@ You forgot to set the timer.
 
 # preparationTime
 
+Esta función debe estimar el tiempo de preparación de una lasaña dependiendo de la cantidad de ingredientes que se le pasen. Puede recibir como parámetros un array con los ingredientes que se necesitan para la lasaña y el tiempo en promedio que se demora por ingrediente, en caso en que no se envíe el tiempo promedio este será de 2 minutos.
+
 ## Input:
 
 ```javascript
