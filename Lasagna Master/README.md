@@ -20,7 +20,7 @@ You forgot to set the timer.
 
 # preparationTime
 
-Esta función debe estimar el tiempo de preparación de una lasaña dependiendo de la cantidad de ingredientes que se le pasen. Puede recibir como parámetros un array con los ingredientes que se necesitan para la lasaña y el tiempo en promedio que se demora por ingrediente, en caso en que no se envíe el tiempo promedio este será de 2 minutos.
+Esta función debe estimar el tiempo de preparación de una lasaña dependiendo de la cantidad de ingredientes que se le pasen. Puede recibir como parámetros un _array_ con los ingredientes que se necesitan para la lasaña y el tiempo en promedio que se demora por ingrediente, en caso en que no se envíe el tiempo promedio este será de 2 minutos.
 
 ## Input:
 
@@ -40,7 +40,7 @@ console.log(preparationTime(layers, 3));
 
 # quantities
 
-Esta función debe determinar cuánta salsa y fideos se deben utilizar dependiendo de la cantidad de veces que se nombran estos ingredientes en el array. Por cada ingrediente _noodles_ se deben utilizar 50 gramos de fideos y por cada ingrediente _sauce_ se deben utilizar 0.2 litros de salsa.
+Esta función debe determinar cuánta salsa y fideos se deben utilizar dependiendo de la cantidad de veces que se nombran estos ingredientes en el _array_. Por cada ingrediente _noodles_ se deben utilizar 50 gramos de fideos y por cada ingrediente _sauce_ se deben utilizar 0.2 litros de salsa.
 
 ```javascript
 const layers = ["sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"];
@@ -55,6 +55,8 @@ console.log(quantities(layers));
 ```
 
 # addSecretIngredient
+
+Tu amigo tiene su propia lista de ingredientes para preparar lasaña, pero tiene un ingrediente secreto. Ese ingrediente siempre estará al final de su _array_ y como el buen amigo que es quiere confiarte su secreto. Con la función `addSecretIngredient()`, se agrega el ingrediente secreto a tu propia lista.
 
 ```javascript
 const friendsList = ["noodles", "sauce", "mozzarella", "kampot pepper"];
