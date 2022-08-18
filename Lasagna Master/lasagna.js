@@ -17,7 +17,7 @@ function preparationTime(layersArray, time) {
 }
 
 function quantities(layersArray) {
-  return layersArray
+  let newLayer = layersArray
     .filter((layers) => layers == "noodles" || layers == "sauce")
     .reduce(function (accumulator, currentValue) {
       if (accumulator != undefined && currentValue in accumulator) {
@@ -27,6 +27,9 @@ function quantities(layersArray) {
       }
       return accumulator;
     }, {});
+  newLayer.noodles = newLayer.noodles * 50;
+  newLayer.sauce = newLayer.sauce * 0.2;
+  return newLayer;
 }
 
 function addSecretIngredient(friendsList, myList) {
